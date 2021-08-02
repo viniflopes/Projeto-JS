@@ -8,7 +8,6 @@ const listaDeDestinos = new Array(
 const idadeComprador = 18; 
 const estaAcompanhada = false; 
 let temPassagemComprada = false;
-const foiEducado = true;
 const destino = "Salvador";
 
 console.log("\n Destinos Possíveis");
@@ -28,3 +27,15 @@ let destinoExiste=false;
     } 
 
     console.log("Destino existe: ", destinoExiste);
+
+    if(podeComprar && destinoExiste){ 
+        console.log("Boa Viagem");
+    }else{
+        console.log("Desculpe tivemos um erro!");
+    }
+
+    //Corpo do FOR
+    //for(let i = 0 ; i <3 ; i++){
+    //if(listaDeDestinos[contador] == destino){
+      //  destinoExiste = true;
+//}
